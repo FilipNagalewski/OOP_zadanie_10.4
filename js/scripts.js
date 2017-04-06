@@ -1,15 +1,15 @@
-function Telefon(marka, kolor, cena) {
-	this.marka = marka;
-	this.kolor = kolor;
-	this.cena = cena;
+function Phone(brand, color, price) {
+	this.brand = brand;
+	this.color = color;
+	this.price = price;
 };
 
 Telefon.prototype.printInfo = function() {
-	console.log("Marka telefonu to " + this.marka + ", kolor to " + this.kolor + ", a cena to " + this.cena + ".");
+	console.log("The brand of the phone is " + this.brand + ", the color is " + this.color + " and the price is " + this.price + ".");
 };
 
-var samsungGalaxy6S = new Telefon('Samsung', 'grafitowy', '1569 PLN');
-var iPhone6s = new Telefon('Apple', 'srebrny', '2250 PLN');
-var onePlusOne = new Telefon('OnePlus', 'czarny', '999 PLN');
+var samsungGalaxy6S = new Phone('Samsung', 'graphite', '1569 PLN');
+var iPhone6s = new Phone('Apple', 'silver', '2250 PLN');
+var onePlusOne = new Phone('OnePlus', 'black', '999 PLN');
 
 iPhone6s.printInfo();
